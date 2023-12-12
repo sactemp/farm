@@ -1,0 +1,48 @@
+version: '3'
+services:
+  nginx:
+    image: "nginx"
+    volumes:
+      - "./nginx/logs:/var/log/nginx"
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf/"
+      - "./front-web/public:/usr/share/nginx/assets"
+    ports:
+      - 19000:19000
+    depends_on:
+      - front-web
+  restapi:
+    build:
+      context: ./restapi
+      dockerfile: dockerfile
+    ports:
+      - 19020:19020
+    volumes:
+      - "./restapi/src:/app/src"
+  front-web:
+    build:
+      context: ./front-web
+      dockerfile: dockerfile.dev
+    volumes:
+      - "./front-web/src:/app/src"
+      - "./front-web/public:/app/public"
+    ports:
+      - 19010:19010
+  front-webpack:
+    build:
+      context: ./front-web
+      dockerfile: dockerfile.wp
+    volumes:
+      - "./front-web/src:/app/src"
+    ports:
+      - 19050:19050
+  realtime:
+    env_file: .env
+    build:
+      context: ./realtime
+      dockerfile: dockerfile.dev
+    volumes:
+      - "./realtime/src:/app/src"
+    ports:
+      - 19040:19040
+    depends_on:
+      - restapi

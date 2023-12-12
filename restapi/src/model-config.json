@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "avatar": {
+    "dataSource": "postgresqlDs",
+    "public": true
+  },
+  "users": {
+    "dataSource": "postgresqlDs",
+    "public": true
+  },
+  "roles": {
+    "dataSource": "postgresqlDs",
+    "public": true
+  },
+  "userrole": {
+    "dataSource": "postgresqlDs",
+    "public": true
+  },
+	"zone": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	},
+	"skill_kind": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	},
+	"startlocation": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	},
+	"technology_process": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	},
+	"task": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	},
+  "entity": {
+    "dataSource": "postgresqlDs",
+    "public": true
+  },
+	"entity_skill": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	},
+	"entity_technology_process": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	},
+	"entity_kind": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	},
+	"entity_type": {
+    "dataSource": "postgresqlDs",
+    "public": true
+	}
+}

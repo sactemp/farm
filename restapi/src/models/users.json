@@ -1,0 +1,21 @@
+{
+  "name": "users",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": { "type": "number", "id": true },
+    "login": { "type": "string", "required": true },
+    "password": { "type": "string", "required": true },
+    "surname": { "type": "string", "required": true },
+    "name": { "type": "string", "required": true },
+    "patronymic": { "type": "string" },
+    "money": { "type": "number" }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

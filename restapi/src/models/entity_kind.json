@@ -1,0 +1,25 @@
+{
+  "name": "entity_kind",
+  "plural": "entity_kind",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": { "type": "number", "id": true },
+    "title": { "type": "string", "required": true },
+    "entity_type_id": { "type": "number" },
+    "options": { "type": "number" },
+    "sx": { "type": "number" },
+    "sy": { "type": "number" },
+    "tilex": { "type": "number" },
+    "tiley": { "type": "number" },
+    "gcolor": { "type": "string", "required": true },
+    "gicon": { "type": "string", "required": true }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

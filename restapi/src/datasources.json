@@ -1,0 +1,28 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "postgresqlDs": {
+    "name": "postgresqlDs",
+    "connector": "postgresql",
+    "host": "10.70.100.231",
+		"port": 5432,
+    "database": "farm",
+    "user": "farm_user",
+    "password": "12345",
+		"ssl23": false,
+    "debug": true
+  },
+  "firebirdDs321312": {
+    "name": "firebirdDs321312",
+    "connector": "firebird",
+    "host": "10.70.100.231",
+		"port": 3050,
+    "database": "systemrequest",
+    "user": "SYSDBA",
+    "password": "m",
+		"charset": "win1251",
+		"pools": 5
+  }
+}

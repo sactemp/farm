@@ -1,0 +1,35 @@
+{
+  "name": "technology_process",
+  "plural": "technology_process",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": { "type": "number", "id": true },
+    "skill_kind_id": { "type": "number" },
+    "executor_duration": { "type": "number" },
+    "duration": { "type": "number" },
+    "primecost": { "type": "number" },
+    "options": { "type": "number" },
+    "produced_ek1_id": { "type": "number" },
+    "produced_ek1_count": { "type": "number" },
+    "produced_ek2_id": { "type": "number" },
+    "produced_ek2_count": { "type": "number" },
+    "spended_ek1_id": { "type": "number" },
+    "spended_ek1_count": { "type": "number" },
+    "spended_ek2_id": { "type": "number" },
+    "spended_ek2_count": { "type": "number" },
+    "spended_ek3_id": { "type": "number" },
+    "spended_ek3_count": { "type": "number" },
+    "spended_ek4_id": { "type": "number" },
+    "spended_ek4_count": { "type": "number" },
+    "spended_ek5_id": { "type": "number" },
+    "spended_ek5_count": { "type": "number" }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

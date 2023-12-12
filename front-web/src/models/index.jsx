@@ -1,0 +1,16 @@
+export default {
+  avatar: require('./avatar.json'),
+  roles: require('./roles.json'),
+  users: require('./users.json'),
+  userrole: require('./userrole.json'),
+  zone: require('./zone.json'),
+  skillKind: require('./skill_kind.json'),
+  startlocation: require('./startlocation.json'),
+  technologyProcess: require('./technology_process.json'),
+  task: require('./task.json'),
+  entity: require('./entity.json'),
+  entityKind: require('./entity_kind.json'),
+  entityType: require('./entity_type.json'),
+  entitySkill: require('./entity_skill.json'),
+  entityTechnologyProcess: require('./entity_technology_process.json'),
+};

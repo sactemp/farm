@@ -1,0 +1,158 @@
+
+.FrontView {
+	border-radius: 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	display: flex;
+	height: 100vh;
+}
+
+.gamemap {
+	width: 100%;
+	height: 100vh;
+  	margin: 0px;
+	border: 2px solid #eeeeee;
+	background-color: #1f1f1f;
+	display: grid;
+	grid-template-columns: 20px 1fr 20px;
+	grid-template-rows: 20px 1fr 20px;
+}
+
+.infopanel {
+	display: flex;
+	width: 300px;
+	padding: 5px 5px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.gamemap-top {
+	border: 1px solid #ffffff;
+}
+.gamemap-left {
+	border: 1px solid #5fffff;
+}
+.gamemap-right {
+	border: 1px solid #ff00ff;
+}
+.gamemap-bottom {
+	border: 1px solid #ff30ff;
+}
+
+.entity {
+	position: absolute;
+	border: 1px solid #00000000;
+
+    &:hover {
+      border: 1px solid red;
+    }
+}
+
+.entity-selected {
+//  border: 1px solid red;
+	background-color: #dfdfdf7f;
+}
+
+.entity-disabled {
+	//  border: 1px solid red;
+		background-color: #1f1f1f7f;
+	}
+	
+.entity-target {
+  border: 1px solid red;
+	background-color: #dfdfdf1f;
+}
+
+.taskList {
+	position: static;
+//	position: absolute;
+}
+.task {
+	position: static;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	background-color: #ffffff7f;
+	text-align: center;
+}
+
+.skillButton {
+	display: inline-block;
+	margin: 2px;
+	padding: 0 10px;
+	border: 1px solid #1f1f1f;
+	background-color: #7f7f7f;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+	overflow: hidden;
+
+	.title {
+		margin: 0 auto;
+	}
+  &:hover {
+		border: 1px solid red;
+		background-color: #cfcfcf;
+	}
+}
+
+.detail {
+	margin: 0px 0;
+	padding: 5px;
+	background-color: #dfdfdf7f;
+	overflow: hidden;
+
+	img {
+		width: 80px;
+		float: left;
+	}
+	.text {
+		display: inline-block;
+	}
+}
+
+.toolpanel {
+	margin: 5px 0;
+  // margin-left: 80%;
+	background-color: #7f7f7f;
+	padding: 5px;
+
+	.group {
+		margin: 2px;
+		width: 100%;
+		border: 1px solid #eeeeee;
+
+    &:hover {
+      border: 1px solid red;
+    }
+	}
+
+	.btn {
+		display: inline-block;
+		margin: 2px;
+		padding: 4px;
+		width: 130px;
+		border: 1px solid #eeeeee;
+		cursor: pointer;
+		overflow: hidden;
+
+    &:hover {
+      border: 1px solid red;
+    }
+
+		img {
+			margin: 0 auto;
+		}
+	}
+	.active {
+		background-color: #dfdfdf;
+	}
+}
+.badge-label {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+

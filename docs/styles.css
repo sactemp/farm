@@ -1,0 +1,25 @@
+body{
+	font-family: Times new roman,sans-serif;
+	color: #333333;
+	background: #ffffff;
+	line-height: 1.0;	
+	margin: 0px;
+	padding: 10px;
+}
+a:link, a:visited, a:hover {
+	color: #006699;
+	text-decoration: none;
+}
+h1{
+	text-align: center;
+	color: #0077ff;
+}
+h2{
+	color: #007799;
+}
+h3{
+	color: #009999;text-align: center;
+}
+h4{
+	margin-left: 3cm;
+}

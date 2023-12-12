@@ -1,0 +1,18 @@
+{
+  "name": "entity_technology_process",
+  "plural": "entity_technology_process",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": { "type": "number", "id": true },
+    "entity_kind_id": { "type": "number" },
+    "technology_process_id": { "type": "number" }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,102 @@
+html, body { 
+	margin: 0;
+	padding: 0;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  min-width: 300px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.margin5 {
+	margin: 5px;
+}
+
+.App {
+	height: 100vh;
+  padding: 0px;
+
+  h1 {
+    font-size: 26px;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  hr {
+    margin-top: 20px;
+  }
+
+  .form {
+    display: flexbox;
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 10px 0px;
+	}
+
+  .card {
+    display: inline-block;
+    padding: 1em;
+    //box-sizing: border-box;
+    margin: 10px 10px;
+    // position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    .detail {
+      width: 100%;
+    }
+
+    .field {
+      margin: 5px 15px 5px 0;
+    }
+  }
+
+  .card:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.PageLogo {
+  display: inline;
+  margin-bottom: 20px;
+  font-size: 32px;
+
+  a {
+		color: #eeeeee;
+    margin: 20px;
+    font-size: 36px;
+    display: inline-block;
+  }
+}
+
+.LeftColumn {
+  padding: 10px;
+}
+
+.RightColumn {
+	float: right;
+  width: 250px;
+  padding: 0px 10px 0px 10px;
+}
+
+.Home {
+	height: 100%;
+  background-image: url(gorod-minimalizm.jpg);
+	background-size: cover;
+}
+
+.ErrorList {
+  max-width: 100%;
+  word-wrap: break-word;
+}

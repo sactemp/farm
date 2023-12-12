@@ -1,0 +1,52 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Button, Row } from 'reactstrap';
+import { Link } from 'react-router-dom';
+
+const Logined = (props) => {
+  const { user, onLogout } = props;
+
+  return (
+    <div className="Profile">
+      <Row>
+        Ф.И.О.:
+        <div className="value">
+          <Link to={`/users/edit/${user.id}`}>
+            { user.name }
+          </Link>
+        </div>
+      </Row>
+      <Row>
+        <div>
+          {`Баланс: ${user.money}$`}
+        </div>
+        <div>
+          <Link to="/avatar">
+            Пополнить
+          </Link>
+        </div>
+      </Row>
+      <Row>
+        <Link to="/avatars">
+          Мои работники
+        </Link>
+      </Row>
+      <div className="text-center">
+        <Button
+          color="primary"
+          onClick={onLogout}
+        >
+          Выйти
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+Logined.propTypes = {
+  'onLogout': PropTypes.func.isRequired,
+  'user': PropTypes.object.isRequired
+};
+
+
+export default Logined;

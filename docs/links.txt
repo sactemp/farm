@@ -1,0 +1,30 @@
+
+https://github.com/onedayitwillmake/RealtimeMultiplayerNodeJs
+
+
+https://medium.com/@abhiaiyer/real-time-graphql-chat-part-2-client-7e1ccb0d4d5f
+
+	схемы
+https://bootswatch.com
+
+https://github.com/mnorrish/react-svg-game
+
+	Как я создавал карты континентов для своей игры
+https://habr.com/post/429620/
+
+	Generating fantasy maps
+https://github.com/mewo2/terrain
+https://mewo2.com/notes/terrain/
+
+	игра
+https://github.com/chriz001/Reacteroids
+
+habrahabr
+https://habr.com/company/mailru/blog/220359/
+https://habr.com/company/mailru/blog/182088/
+
+Коллапс волновой функции: алгоритм, вдохновлённый квантовой механикой
+https://github.com/kchapelier/wavefunctioncollapse
+
+Вычисление расстояния между точкой и прямой/лучом/отрезком
+http://algolist.manual.ru/maths/geom/distance/pointline.php

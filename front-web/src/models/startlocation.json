@@ -1,0 +1,19 @@
+{
+  "name": "startlocation",
+  "plural": "startlocation",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": { "type": "number", "id": true },
+    "zone_id": { "type": "number" },
+    "x": { "type": "number" },
+    "y": { "type": "number" }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

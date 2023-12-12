@@ -1,0 +1,35 @@
+.container-general {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	&--header {
+		flex-grow: 0;
+		padding: 10px;
+		font-size: 1.4rem;
+		font-weight: 700;
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+	}
+
+	&--content {
+		width: 100%;
+		height: 250px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&--item {
+			margin: 5px;
+			padding: 5px;
+			width: 300px;
+			height: 90%;
+			border: 1px solid #ffffff;
+		}
+
+		&--item:hover {
+			border: 1px solid red;
+		}
+	}
+}

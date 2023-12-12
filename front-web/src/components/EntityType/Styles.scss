@@ -1,0 +1,47 @@
+.AccessList {
+  padding: 20px;
+	background: #00aaaaaa;
+
+  .row {
+    font-size: 15px;
+    padding: 10px 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px solid #cacaca;
+    position: relative;
+    clear: both;
+    width: 100%;
+
+    .link {
+      cursor: pointer;
+    }
+
+    .link:hover {
+      background-color: #eeeeee;
+    }
+
+    .field {
+      display: inline;
+      margin: 5px 15px 5px 0;
+    }
+
+    .buttons {
+      display: block;
+      text-align: left
+    }
+    .buttons * {
+      margin: 5px 15px 5px 0;
+    }
+  }
+}
+
+.AccessListFilter {
+  padding: 0 0 0 20px;
+
+  .field {
+    display: inline;
+    margin: 5px 15px 5px 0;
+  }
+}
+
+

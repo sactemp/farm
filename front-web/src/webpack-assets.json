@@ -1,0 +1,13 @@
+{
+  "javascript": {
+    "app": "/public/assets/app.js",
+    "vendor": "/public/assets/vendor.js"
+  },
+  "styles": {
+    "app": "/public/assets/styles.css"
+  },
+  "assets": {},
+  "webpack": {
+    "version": "5.9.0"
+  }
+}
